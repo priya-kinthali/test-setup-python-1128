@@ -19,6 +19,7 @@ jobs:
 
       - run: ls -la
       - run: cat requirements.txt
+      - run: grep "Consumer repo requirements" requirements.txt
 
   maybe-reproduce-full-path:
     runs-on: ubuntu-latest
@@ -32,3 +33,4 @@ jobs:
 
       - run: ls -la
       - run: cat requirements.txt
+      - run: grep "Consumer repo requirements" requirements.txt
