@@ -15,7 +15,7 @@ jobs:
       - run: ls -la
       - run: cat requirements.txt
 
-      - uses: ./.github/actions/demo
+      - uses: ./.github/demo-action
 
       - run: ls -la
       - run: cat requirements.txt
