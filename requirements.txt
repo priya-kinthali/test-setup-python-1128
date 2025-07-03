@@ -1,1 +1,3 @@
 # Composite Action requirements
+
+pip
