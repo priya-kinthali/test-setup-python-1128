@@ -3,7 +3,7 @@ runs:
   using: composite
   steps:
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@12648859835f68b273febdd9aab9972bbb624d8c
       with:
         cache: pip
         cache-dependency-path: requirements.txt
