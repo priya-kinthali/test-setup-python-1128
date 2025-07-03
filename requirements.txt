@@ -1,1 +1,3 @@
 # Consumer repo requirements
+
+pip
