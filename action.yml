@@ -2,8 +2,14 @@ name: Demo Action
 runs:
   using: composite
   steps:
+    - run: echo $GITHUB_ACTION_PATH
+      shell: bash
+    - run: echo ${{ github.action_path }}
+      shell: bash
+
     - name: Set up Python
       uses: actions/setup-python@12648859835f68b273febdd9aab9972bbb624d8c
       with:
+        python-version: 3.13
         cache: pip
         cache-dependency-path: requirements.txt
