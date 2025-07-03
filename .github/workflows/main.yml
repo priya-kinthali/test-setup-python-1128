@@ -1,0 +1,21 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  self-test-happy-path:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: ls -la
+      - run: cat requirements.txt
+
+      - uses: ./.github/actions/demo
+
+      - run: ls -la
+      - run: cat requirements.txt
