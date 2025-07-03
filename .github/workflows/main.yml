@@ -19,3 +19,16 @@ jobs:
 
       - run: ls -la
       - run: cat requirements.txt
+
+  maybe-reproduce-full-path:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: ls -la
+      - run: cat requirements.txt
+
+      - uses: PeterJCLaw/test-setup-python-1128@demo-action-full-path
+
+      - run: ls -la
+      - run: cat requirements.txt
