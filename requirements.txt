@@ -1,1 +1,1 @@
-# Consumer repo requirements
+# Composite Action requirements
