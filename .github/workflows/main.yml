@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  self-test-happy-path:
+  reproduce:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
