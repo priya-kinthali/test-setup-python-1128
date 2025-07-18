@@ -15,8 +15,7 @@ jobs:
       - run: ls -la
       - run: cat requirements.txt
 
-      - uses: PeterJCLaw/test-setup-python-1128@demo-action
-
+      - uses: priya-kinthali/test-setup-python-1128@demo-action
       - run: ls -la
       - run: cat requirements.txt
       - run: grep "Consumer repo requirements" requirements.txt
@@ -29,7 +28,7 @@ jobs:
       - run: ls -la
       - run: cat requirements.txt
 
-      - uses: PeterJCLaw/test-setup-python-1128@demo-action-full-path
+      - uses: priya-kinthali/test-setup-python-1128@demo-action-full-path
 
       - run: ls -la
       - run: cat requirements.txt
