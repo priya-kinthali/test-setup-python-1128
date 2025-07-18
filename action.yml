@@ -1,4 +1,5 @@
 name: Demo Action
+description: A demo GitHub Action to showcase functionality.
 runs:
   using: composite
   steps:
@@ -8,7 +9,7 @@ runs:
       shell: bash
 
     - name: Set up Python
-      uses: actions/setup-python@12648859835f68b273febdd9aab9972bbb624d8c
+      uses: actions/setup-python@main
       with:
         python-version: 3.13
         cache: pip
