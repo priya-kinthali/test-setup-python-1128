@@ -9,7 +9,7 @@ runs:
       shell: bash
 
     - name: Set up Python
-      uses: actions/setup-python@main
+      uses: priya-kinthali/setup-python@sample-361
       with:
         python-version: 3.13
         cache: pip
